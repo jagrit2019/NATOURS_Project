@@ -8,7 +8,7 @@
     "start:prod": "NODE_ENV=production nodemon server.js",
     "start": "node server.js"
   },
-  "author": "Jonas Schmedtmann",
+  "author": "Jagrit Acharya",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
