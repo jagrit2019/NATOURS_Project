@@ -1,15 +1,31 @@
 const express = require('express');
 const fs = require('fs');
 
+const morgan = require('morgan');
+
 
 const app = express();
 
+//1) middlewares
+
 //this is the middleware
+app.use(morgan('dev'));
+
+
+app.use((req,res,next)=>{
+    console.log("Hello from the middleware 👋");
+    next();
+});
+
 app.use(express.json());
 
 const port = 3000;
 //this is also an expample where y is the optiona parameter
 // app.get('/api/v1/tours/:id/:x/:y?',(req,res)=>{
+
+
+
+//2)route Handlers
 
 const tours=JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`))
 // getting sepcific tour using id in the url ":id" this is way we declear a variable
@@ -109,31 +125,88 @@ const createTour=(req,res)=>{
             
          }
 }
+
+
+const getAllUsers = (req,res)=>{
+    res.status(500).json({
+        status:'error',
+        message:'This route was not yet defined'
+    })
+}
+const getUser = (req,res)=>{
+    res.status(500).json({
+        status:'error',
+        message:'This route was not yet defined'
+    })
+}
+const updateUsers = (req,res)=>{
+    res.status(500).json({
+        status:'error',
+        message:'This route was not yet defined'
+    })
+}
+const deleteUsers = (req,res)=>{
+    res.status(500).json({
+        status:'error',
+        message:'This route was not yet defined'
+    })
+}
+const createUser = (req,res)=>{
+    res.status(500).json({
+        status:'error',
+        message:'This route was not yet defined'
+    })
+}
 // app.get('/api/v1/tours/:id',createTour);
 // app.patch('/api/v1/tours/:id',updateTour);
 // app.delete('/api/v1/tours/:id',deleteTour);
 // app.post('/api/v1/tours',createNew);
 
 //best optimised
-app.route('/api/v1/tours')
+
+const tourRouter = express.Router();
+const UserRouter = express.Router();
+
+
+tourRouter.route('/')
 .get(getAllTours)
 .post(createNew);
 // this will only execute for the below ones only not of the function above it
-app.use((req,res,next)=>{
+tourRouter.use((req,res,next)=>{
     console.log("Hello from the middleware 👋");
     next();
 });
 
-app.route('/api/v1/tours/:id')
+app.route('/:id')
 .get(createTour)
 .patch(updateTour)
 .delete(deleteTour);
+
+
+
+
 // app.get('/',(req,res)=>{
 // res.status(200).json({message:'Hello form the server side', app:'Natours'})
 // })
 // app.post('/',(req,res)=>{
 //     res.send("This is the post request")
 // })
+
+
+
+
+app.route('/')
+.get(getAllUsers)
+.post(createUser);
+
+app.route('/:id')
+.get( getUser)
+.patch(updateUsers)
+.delete(deleteUsers);
+
+app.use('/api/v1/tours',tourRouter);
+app.use('/api/v1/users',UserRouter);
+
 app.listen(port,()=>{
     console.log(`the server is running on ${port}`);
 });
