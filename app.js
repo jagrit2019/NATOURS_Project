@@ -14,7 +14,10 @@ const port = 3000;
 const tours=JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`))
 // getting sepcific tour using id in the url ":id" this is way we declear a variable
 
-
+app.use((req,res,next)=>{
+req.requestTime= new Date().toISOString();
+next();
+});
 
 const updateTour= (req,res)=>{
     if(req.params.id= 1>tours.length){
@@ -49,8 +52,11 @@ const deleteTour=(req,res)=>{
 
 //this is an event loop dont put a sync fucntion inside otherwise you are gone
 const getAllTours = (req,res)=>{
+    console.log(req.requestTime);
+
     res.status(200).json({
     status:"success",
+    requestedAt:req.requestTime,
     results:tours.length,
     data:{
         tours
@@ -112,8 +118,11 @@ const createTour=(req,res)=>{
 app.route('/api/v1/tours')
 .get(getAllTours)
 .post(createNew);
-
-
+// this will only execute for the below ones only not of the function above it
+app.use((req,res,next)=>{
+    console.log("Hello from the middleware 👋");
+    next();
+});
 
 app.route('/api/v1/tours/:id')
 .get(createTour)
