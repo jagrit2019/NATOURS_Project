@@ -8,10 +8,25 @@ const app = express();
 app.use(express.json());
 
 const port = 3000;
-
+//this is also an expample where y is the optiona parameter
+// app.get('/api/v1/tours/:id/:x/:y?',(req,res)=>{
 
 const tours=JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`))
-
+// getting sepcific tour using id in the url ":id" this is way we declear a variable
+app.get('/api/v1/tours/:id',(req,res)=>{
+    //req.params that gives the value of the variable
+    console.log(req.params);
+    // to converst string in to a number just multiply  with one
+    const id = req.params.id *1;
+    const tour = tours.find(el=>el.id===id)
+    res.status(200).json({
+        status:"success",
+      
+        data:{
+            tour
+        }
+     })
+    });
 
 //this is an event loop dont put a sync fucntion inside otherwise you are gone
 app.get('/api/v1/tours',(req,res)=>{
