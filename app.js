@@ -6,6 +6,8 @@ const morgan = require('morgan');
 
 const app = express();
 
+//to serve static files for brwoser
+app.use(express.static(`${__dirname}/public`))
 //1) middlewares
 
 //this is the middleware
