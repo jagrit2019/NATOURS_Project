@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); // this is the one of the most famous library if using mongoDB
 const slugify = require('slugify');
 // const validator = require('validator');
 
