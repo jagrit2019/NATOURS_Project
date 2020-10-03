@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const slugify = require('slugify');
+const mongoose = require('mongoose');  // used for writing MongoDB validation, casting and business logic boilerplate is a drag.
+const slugify = require('slugify'); //Slugifies strings, even when they contain Unicode 
 // const validator = require('validator');
 
 const tourSchema = new mongoose.Schema(
