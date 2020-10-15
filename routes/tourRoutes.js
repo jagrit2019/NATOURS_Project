@@ -12,7 +12,7 @@ router
 
 router.route('/tour-stats').get(tourController.getTourStats);
 router.route('/monthly-plan/:year').get(tourController.getMonthlyPlan);
-
+//The way we have code it is the industry accepted Hue please look the format thoroughly so that you can grab how does the open source community work
 router
   .route('/')
   .get(tourController.getAllTours)
