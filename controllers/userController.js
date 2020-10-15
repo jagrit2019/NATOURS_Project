@@ -1,3 +1,5 @@
+//you are thinking what is req == request 
+//and res ==> response this code will be executed when you have code of 500
 exports.getAllUsers = (req, res) => {
   res.status(500).json({
     status: 'error',
