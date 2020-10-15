@@ -442,7 +442,7 @@ body {
   flex: 0 0 50%;
 }
 
-.description-box .description {
+/* .description-box .description {
   margin-right: 5rem;
 }
 .description-box .description__text {
@@ -450,7 +450,7 @@ body {
 }
 .description-box .description__text:not(:last-child) {
   margin-bottom: 2rem;
-}
+} */
 
 .overview-box {
   background-color: #f7f7f7;
