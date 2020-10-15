@@ -1,3 +1,4 @@
+// This is the main file where the core fucntionalites has been added
 const express = require('express');
 const morgan = require('morgan');
 
