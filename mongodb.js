@@ -4,7 +4,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 // replace the uri string with your connection string.
 
-const DB= "mongodb+srv://jagrit:Jha8875091601@cluster0.w9uya.mongodb.net/text?retryWrites=true&w=majority"
+
 
 mongoose.connect(DB,{
     useNewUrlParser:true,
