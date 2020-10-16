@@ -52,3 +52,6 @@ In this project the front end is made in HTML CSS and JavaScript where as the ba
 |       `-- worker.js
 |-- index.js
 `-- package.json
+
+What is NodeJS
+Node.js is an open-source, cross-platform, back-end, JavaScript runtime environment that executes JavaScript code outside a web browser
