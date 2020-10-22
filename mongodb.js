@@ -6,15 +6,15 @@ const MongoClient = require('mongodb').MongoClient;
 
 
 
-mongoose.connect(DB,{
-    useNewUrlParser:true,
-    useCreateIndex:true,
-    useFindAndModify:false
-}).then(con=>{
-    console.log(con.connected);
-    console.log('DB connection successfull')
-})
-dotenv.config.env.DATABASE.replace('<Pass>',process.env)
+// mongoose.connect(DB,{
+//     useNewUrlParser:true,
+//     useCreateIndex:true,
+//     useFindAndModify:false
+// }).then(con=>{
+//     console.log(con.connected);
+//     console.log('DB connection successfull')
+// })
+// dotenv.config.env.DATABASE.replace('<Pass>',process.env)
 // MongoClient.connect(DB, function(err, client) {
 //    if(err) {
 //         console.log('Error occurred while connecting to MongoDB Atlas...\n',err);
