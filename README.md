@@ -55,3 +55,8 @@ In this project the front end is made in HTML CSS and JavaScript where as the ba
 
 What is NodeJS
 Node.js is an open-source, cross-platform, back-end, JavaScript runtime environment that executes JavaScript code outside a web browser
+/*What is Node.js?
+Node.js is an open source server environment
+Node.js is free
+Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)
+Node.js uses JavaScript on the server*/
