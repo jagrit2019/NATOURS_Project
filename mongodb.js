@@ -1,6 +1,3 @@
-const mongoose = require('mongoose')
-
-const MongoClient = require('mongodb').MongoClient;
 
 // replace the uri string with your connection string.
 
