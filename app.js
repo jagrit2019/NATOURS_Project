@@ -1,6 +1,6 @@
 
 
-const app = express();
+// const app = express();
 
 // 1) MIDDLEWARES
 if (process.env.NODE_ENV === 'development') {
