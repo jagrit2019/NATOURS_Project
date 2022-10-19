@@ -2,7 +2,7 @@
 
 
 
-}).then(con=>{
+}).then(con=>
 //     console.log(con.connected);
 //     console.log('DB connection successfull')
 // })
