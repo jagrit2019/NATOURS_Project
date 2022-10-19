@@ -1,6 +1,4 @@
 
-//Here is how PHP or ASP handles a file request:
-
 //Sends the task to the computer's file system.
 //Waits while the file system opens and reads the file.
 //Returns the content to the client.
