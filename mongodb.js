@@ -13,4 +13,4 @@
 //    }
 //    console.log('Connected...');
 //    const collection = client.db("test").collection("devices");
-//    // perform actions on the collection object
+   // perform actions on the collection object
