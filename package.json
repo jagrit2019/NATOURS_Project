@@ -15,7 +15,7 @@
 
 {
   "name": "natours",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
   "scripts": {
