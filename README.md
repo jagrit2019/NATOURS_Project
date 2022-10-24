@@ -1,10 +1,4 @@
- the webpage source code as well as the backend code in nodejs
 
-.
-|-- config
-|   |-- components
-|   |   |-- common.js
-|   |   |-- logger.js
 |   |   |-- rabbitmq.js
 |   |   |-- redis.js
 |   |   |-- server.js
