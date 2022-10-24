@@ -18,7 +18,7 @@
 |       |-- index.js
 |       `-- twitter.js
 |-- scripts
-|-- test
+
 |   `-- setup.js
 |-- web
 |   |-- middleware
