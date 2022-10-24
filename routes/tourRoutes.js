@@ -1,6 +1,4 @@
 
-const router = express.Router();
-
 // router.param('id', tourController.checkID);
 // the code will only run if you import the express modules as these all functionalites are possible just because of it
 // it would be really messy if you didnt have used it
