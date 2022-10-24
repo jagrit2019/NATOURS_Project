@@ -1,6 +1,4 @@
 
-//Waits while the file system opens and reads the file.
-//Returns the content to the client.
 //Ready to handle the next request.
 //Here is how Node.js handles a file request:
 
