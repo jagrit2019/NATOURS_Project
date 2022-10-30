@@ -1,6 +1,17 @@
+
+//Here is how Node.js handles a file request:
+
+//Sends the task to the computer's file system.
+//Ready to handle the next request.
+//When the file system has opened and read the file, the server returns the content to the client.
+//Node.js eliminates the waiting, and simply continues with the next request.
+
+//Node.js runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.
+
+
 {
   "name": "natours",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
   "scripts": {
@@ -26,5 +37,4 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.17.0"
-  }
-}
+

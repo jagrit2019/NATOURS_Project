@@ -45,7 +45,8 @@
         <button class="nav__el">Log out</button>
         <a href="#" class="nav__el">
           <img src="img/user.jpg" alt="User photo" class="nav__user-img" />
-          <span>Jonas</span>
+          <span>Jagrit</span>
+          
         </a>
 
         <!--
@@ -62,6 +63,7 @@
             >The Park <br />
             Camper Tour</span
           >
+          <span> this is just a fun project feel free to fork </span>
         </h1>
         <div class="heading-box__group">
           <div class="heading-box__detail">
@@ -284,25 +286,25 @@
         });
 
         map.on('load', function() {
-          map.addLayer({
-            id: 'route',
-            type: 'line',
-            source: {
-              type: 'geojson',
-              data: {
-                type: 'Feature',
-                properties: {},
-                geometry: {
-                  type: 'LineString',
-                  coordinates: [
-                    [-112.987418, 37.198125],
-                    [-111.376161, 36.86438],
-                    [-112.115763, 36.058973],
-                    [-116.107963, 34.011646]
-                  ]
-                }
-              }
-            },
+//           map.addLayer({
+//             id: 'route',
+//             type: 'line',
+//             source: {
+//               type: 'geojson',
+//               data: {
+//                 type: 'Feature',
+//                 properties: {},
+//                 geometry: {
+//                   type: 'LineString',
+//                   coordinates: [
+//                     [-112.987418, 37.198125],
+//                     [-111.376161, 36.86438],
+//                     [-112.115763, 36.058973],
+//                     [-116.107963, 34.011646]
+//                   ]
+//                 }
+//               }
+//             },
             layout: {
               'line-join': 'round',
               'line-cap': 'round'
