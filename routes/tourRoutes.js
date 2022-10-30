@@ -1,5 +1,4 @@
-const express = require('express');
-const tourController = require('./../controllers/tourController');
+require('./../controllers/tourController');
 
 const router = express.Router();
 
@@ -24,3 +23,4 @@ router
   .delete(tourController.deleteTour);
 
 module.exports = router;
+ 
