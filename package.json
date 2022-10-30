@@ -1,5 +1,4 @@
 
-//Ready to handle the next request.
 //Here is how Node.js handles a file request:
 
 //Sends the task to the computer's file system.
