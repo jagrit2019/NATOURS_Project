@@ -1,5 +1,4 @@
 
-|   |   |-- rabbitmq.js
 |   |   |-- redis.js
 |   |   |-- server.js
 |   |   `-- twitter.js
